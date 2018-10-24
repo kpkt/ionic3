@@ -2,21 +2,14 @@
 
 ![Ionic](https://github.com/kpkt/ionic3/blob/master/img1.PNG)
 
-# Pengenalan
+# What is Ionic Framework?
 
-Tutorial ini menggunakan Ionic Framework versi 3. Setiap tutorial adalah menjurus kepada penggunaan asas pemasangan platform ionic. Tutorial ini juga akan merangkumi pembelajaran Asas CLI IONIC, Component IONIC, Theme IONIC, dan API IONIC.
+Ionic framework is free and open source. It allows you to build mobile apps easily using web technologies. The good news is: if you can manage to create websites, then you know how to build mobile apps. Ionic Framework offers the best web and native app components for building highly interactive, native and progressive web apps.
 
-> # What is the Ionic CLI?
-> The CLI, or command line interface, is a tool that provides a number of helpful commands to Ionic developers. In addition to installing and updating Ionic, the CLI comes with a built-in development server, build and debugging tools, and much more. If you are using Ionic Pro, the CLI can be used to export code and even interact with your account programmatically.
+You can think of Ionic as the front-end UI framework that handles all of the look and feel and UI interactions your app needs in order to be compelling. It's like a kind of "Bootstrap for Native" but with all the support for a broad range of common native mobile components, slick animations, and incredible design.
 
-> # What are components?
-> Components in Ionic are reusable UI elements that serve as the building blocks for your mobile app. Components are made up of HTML, CSS, and sometimes JavaScript. Every Ionic component adapts to the platform on which your app is running. We call this Platform Continuity and go more in depth on how it works in Theming.
+Also, it allows developers to design apps for every app store and mobile web, using a unique base code. 
 
-> # What is theming?
-> Themes are sets of styles that get applied to an app. Ionic uses a light theme by default, but it also comes with a dark theme. In addition to theming, Ionic’s Platform Continuity enables components to have platform-specific styles. This means the app’s styles will change based on the platform (iOS, Android, etc.) on which it’s being run, offering your users an experience with which they’re familiar.
+# Prerequisites
 
-
-
-## Pengetahuan Asas
-Pengetahuan asas didalam  Angular (2 or 6)
-Pengetahuan wajib seperti Javascript, HTML, JS dan CSS
+Since Ionic is built on top of Angular and Apache Cordova, you will need to have basic knowledge about these technologies. You also need to be familiar with HTML, CSS and JavaScript, if you want to understand all the information provided.
