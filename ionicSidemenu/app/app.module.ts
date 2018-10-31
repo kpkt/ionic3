@@ -15,6 +15,9 @@ import { TourismsPage } from '../pages/tourisms/tourisms';
 import { DetailsPage } from '../pages/details/details';
 import { TourismFormPage } from '../pages/tourism-form/tourism-form';
 import { DatabasePage } from '../pages/database/database';
+import { PhotoPage } from '../pages/photo/photo';
+import { Camera } from '@ionic-native/camera';
+import { Device } from '@ionic-native/device';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ import { DatabasePage } from '../pages/database/database';
     TourismsPage,
     DetailsPage,
     TourismFormPage,
-    DatabasePage
+    DatabasePage,
+    PhotoPage
   ],
   imports: [
     BrowserModule,
@@ -39,13 +43,16 @@ import { DatabasePage } from '../pages/database/database';
     TourismsPage,
     DetailsPage,
     TourismFormPage,
-    DatabasePage
+    DatabasePage,
+    PhotoPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    TourismProvider
+    TourismProvider,
+    Camera,
+    Device
   ]
 })
 export class AppModule {}

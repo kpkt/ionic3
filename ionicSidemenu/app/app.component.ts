@@ -7,6 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { TourismsPage } from '../pages/tourisms/tourisms';
 import { DatabasePage } from '../pages/database/database';
+import { PhotoPage } from '../pages/photo/photo';
 
 @Component({
   templateUrl: 'app.html'
@@ -26,7 +27,8 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'List', component: ListPage },
       { title :'Tourism',component:TourismsPage },
-      { title : 'Data Storage', component: DatabasePage }
+      { title : 'Data Storage', component: DatabasePage },
+      { title : 'Photo', component: PhotoPage}
     ];
 
   }
