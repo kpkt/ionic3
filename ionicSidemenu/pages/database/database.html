@@ -1,0 +1,69 @@
+<!--
+  Generated template for the DatabasePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Database</ion-title>
+    <ion-buttons end>        
+        <button ion-button (click)="newData()">
+            Add New
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content no-padding>
+  <ion-list *ngIf="!callForm">
+    
+    <ion-list-header>Profile List</ion-list-header>
+    
+    <ion-item-sliding *ngFor="let profile of profiles; let i = index">      
+        <ion-item>
+          <h2>{{i}} : {{profile.name}}</h2>
+          <p>{{profile.email}}</p>
+          <p>{{profile.phone}}</p>
+        </ion-item>
+
+        <ion-item-options>
+          <button ion-button color="danger" (click)="deleteData(i)">
+            <ion-icon name="trash"></ion-icon>
+            Delete
+          </button>
+        </ion-item-options>
+
+    </ion-item-sliding>
+
+  </ion-list>
+
+  <div *ngIf="callForm">
+    <ion-list>
+
+      <ion-list-header>New Profile</ion-list-header>
+      <ion-item>
+        <ion-label floating>Full Name</ion-label>
+        <ion-input [(ngModel)]="input.name" type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input [(ngModel)]="input.email" type="email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Phone</ion-label>
+        <ion-input [(ngModel)]="input.phone" type="number"></ion-input>
+      </ion-item>
+
+    </ion-list>
+
+    <button ion-button block color="primary" (click)="saveForm(input)">Save</button>
+  </div>
+
+
+</ion-content>

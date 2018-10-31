@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-padding>  
+  <ion-list>
+    <ion-list-header>Senarai Lokasi</ion-list-header>
+    <ion-item *ngFor="let item of tourismLists" text-wrap text-justify>
+      <ion-icon showWhen="android,ios" ios="ios-images" md="md-albums" item-start></ion-icon>
+      {{item.name}}<br/>
+      {{item.description}}
+    </ion-item>
+  </ion-list>
+</ion-content>
